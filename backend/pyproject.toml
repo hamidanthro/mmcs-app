@@ -1,5 +1,3 @@
-# rewrite the pyproject with updated ruff config
-@'
 [tool.black]
 line-length = 100
 target-version = ["py311"]
@@ -16,7 +14,3 @@ exclude = ["migrations"]
 [tool.pytest.ini_options]
 addopts = "-q"
 testpaths = ["tests"]
-'@ | Set-Content -Encoding UTF8 "backend\pyproject.toml"
-
-# sanity check
-Get-Content "backend\pyproject.toml"
