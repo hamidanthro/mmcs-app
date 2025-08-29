@@ -1,5 +1,7 @@
 import uuid
+
 from sqlalchemy.dialects.postgresql import UUID
+
 from app.extensions import db
 
 
@@ -11,6 +13,4 @@ class Dimension(db.Model):
     name = db.Column(db.String(255), nullable=False)
     description = db.Column(db.Text, nullable=True)
 
-    __table_args__ = (
-        db.UniqueConstraint("tenant_id", "code", name="uq_dimension_tenant_code"),
-    )
+    __table_args__ = (db.UniqueConstraint("tenant_id", "code", name="uq_dimension_tenant_code"),)

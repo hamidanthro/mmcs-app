@@ -1,8 +1,9 @@
-﻿from flask import Blueprint, jsonify, request, g
+﻿from flask import Blueprint, g, jsonify, request
 from sqlalchemy.exc import IntegrityError
-from .extensions import db
+
 from .errors import APIError
-from .models import Tenant, Dimension
+from .extensions import db
+from .models import Dimension, Tenant
 
 api_bp = Blueprint("api", __name__, url_prefix="/api")
 
