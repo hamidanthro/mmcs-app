@@ -1,0 +1,13 @@
+﻿Flask==3.0.3
+Flask-Cors==4.0.1
+Flask-SQLAlchemy==3.1.1
+psycopg2-binary==2.9.9
+
+# Sprint 1 add-ons
+Flask-Migrate==4.0.7
+alembic==1.13.2
+
+# CI/test quality
+pytest==8.3.2
+black==24.8.0
+ruff==0.6.2

@@ -1,0 +1,13 @@
+﻿# Ignore local junk
+**/__pycache__/
+**/.pytest_cache/
+**/.DS_Store
+**/.env
+**/.venv
+**/node_modules/
+**/dist/
+**/.parcel-cache/
+**/.turbo/
+**/.idea/
+**/.vscode/*
+!.vscode/settings.json

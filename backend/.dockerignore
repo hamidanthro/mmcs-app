@@ -1,0 +1,8 @@
+﻿# Use only what's needed in the image
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+tests/

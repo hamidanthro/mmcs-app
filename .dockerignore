@@ -1,0 +1,8 @@
+﻿# Ignore everything by default
+*
+!docker-compose.yml
+!README.md
+!.gitignore
+!backend/
+!frontend/
+!.vscode/
